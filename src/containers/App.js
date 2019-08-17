@@ -1,10 +1,11 @@
 import React from 'react';
-import Home from '../components/HomeComponent';
+//import Home from '../components/HomeComponent';
+import MisPuntos from '../components/MisPuntosComponent';
 
 function App() {
   return (
     <React.Fragment>
-      <Home />
+      <MisPuntos />
     </React.Fragment>
   );
 }
