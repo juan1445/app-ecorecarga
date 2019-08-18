@@ -1,10 +1,10 @@
 import React from 'react';
-import Home from '../components/HomeComponent';
+import Partners from '../components/PartnersComponent';
 
 function App() {
   return (
     <React.Fragment>
-      <Home />
+      <Partners />
     </React.Fragment>
   );
 }
