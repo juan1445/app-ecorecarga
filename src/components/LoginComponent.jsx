@@ -40,7 +40,7 @@ const Login = () => {
                     </div>
                     <div className="text-center">
                       <br />
-                      <Link to="/">
+                      <Link to="/home">
                         <button className="btn  btn-lg text-white border">
                           Registrarse
                         </button>

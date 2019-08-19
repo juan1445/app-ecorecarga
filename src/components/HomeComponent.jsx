@@ -3,83 +3,37 @@ import "./styles/LoginStyle.css";
 import { Link } from 'react-router-dom';
 import Lola from "./images/lola.jpg";
 import Bello from "./images/AndresBello.jpg";
-import Normal from "./images/NormalSuperior.jpeg";
+//import Normal from "./images/NormalSuperior.jpeg";
 import './styles/PartnersStyle.css';
 
 const Login = () => {
   return (
     <React.Fragment>
-    <header>
-      <div
-        id="carouselExampleIndicators"
-        class="carousel slide"
-        data-ride="carousel"
-      >
-        <ol class="carousel-indicators">
-          <li
-            data-target="#carouselExampleIndicators"
-            data-slide-to="0"
-            class="active"
-          />
-          <li data-target="#carouselExampleIndicators" data-slide-to="1" />
-          <li data-target="#carouselExampleIndicators" data-slide-to="2" />
-        </ol>
-        <div class="carousel-inner" role="listbox">
-          <div class="carousel-item active">
-            <img
-              src="https://www.lola.edu.co/sites/default/files/styles/galleryformatter_slide/public/field/image/galleries/unnamed_0.jpg?itok=cxBUpr0T"
-              className="w-100"
-              alt=""
-            />
-            <div class="carousel-caption d-none d-md-block" />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="https://reciclamosparaayudar.org/wp-content/uploads/2019/02/dise%C2%A6o-reci8clar.jpg"
-              className="w-100"
-              alt=""
-            />
-            <div class="carousel-caption d-none d-md-block" />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="http://www.reciclaccion.cl/wp-content/uploads/2013/08/images_celulares-1024x710.jpg"
-              className="w-100"
-              alt=""
-            />
-            <div class="carousel-caption d-none d-md-block" />
+    <div className="bg-color-home text-center">
+        <div className="position-relative overflow-hidden p-3 p-md-5 bg-home text-white d-flex justify-content-center">
+          <div className="col-md-5 p-lg-5 my-5 bg-color-home">
+            <h1 className="display-4 font-weight-normal title-home">
+              EcoRecarga, Conectate Reciclando
+            </h1>
+            {/* <a
+              className="btn btn-primary btn-lg bg-boton font-weight-bold boton-letter py-1"
+              href="https://wa.me/0573232933565"
+            >
+              Contáctanos
+            </a> */}
           </div>
         </div>
-        <a
-          class="carousel-control-prev"
-          href="#carouselExampleIndicators"
-          role="button"
-          data-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true" />
-          <span class="sr-only">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#carouselExampleIndicators"
-          role="button"
-          data-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true" />
-          <span class="sr-only">Next</span>
-        </a>
       </div>
-      <div className="row text-center mt-5">
+      <div className="row m-0 text-center mt-5">
         <div className="col-lg-6 col-md-12 my-3">
-          <Link to="/recargas" ><button className="btn btn-lg btn-success text-center text-white mx-auto ">
+          <Link to="/recargas" ><button className="btn btn-lg btn-success text-center text-white mx-auto mb-5">
             Mis recargas
           </button></Link>
         </div>
         <div className="col-lg-6 col-md-12 my-3">
-          <Link to="/mispuntos"><button className="btn btn-lg btn-success">Mis puntos</button></Link>
+          <Link to="/mispuntos"><button className="btn btn-lg btn-success mb-5">Mis puntos</button></Link>
         </div>
       </div>
-    </header>
             {/* <p className=" container d-flex  justify-content-center justify-content-between my-5 ">
             <a
               className="btn btn-success btn-lg"
@@ -100,7 +54,7 @@ const Login = () => {
               aria-controls="multiCollapseExample2"
             >
               ¿ Porque nosotros ?
-            </button>
+            </button>card
           </p>
           <div className="row mb-5">
             <div className="col">
@@ -117,7 +71,8 @@ const Login = () => {
                 </div>
               </div>
             </div>
-  
+          <div className="container">
+            <h2 className="text-center">Aliados</h2>
           <div className="card-deck">
             <div className="card">
               <img className="card-img-top" src={Lola} alt="" />
@@ -128,9 +83,6 @@ const Login = () => {
                   Santa Lucia de Medellín, es conocido por que en un momento dado
                   fue de solo mujeres, en el 2009 paso a ser mixto.
                 </p>
-              </div>
-              <div className="card-footer">
-                <small className="text-muted">Hace 1 mes</small>
               </div>
             </div>
             <div className="card">
@@ -143,12 +95,9 @@ const Login = () => {
                   rendimiento academico
                 </p>
               </div>
-              <div className="card-footer">
-                <small className="text-muted">Hace 1 mes</small>
-              </div>
             </div>
             <div className="card">
-              <img className="card-img-top" src={Normal} alt="" />
+              <img className="card-img-top" src={Bello} alt="" />
               <div className="card-body">
                 <h5 className="card-title">I.E Normal Superior del Nordeste</h5>
                 <p className="card-text">
@@ -158,10 +107,8 @@ const Login = () => {
                   grados 12-13 para normalistas
                 </p>
               </div>
-              <div className="card-footer">
-                <small className="text-muted">Hace 1 mes</small>
-              </div>
             </div>
+          </div>
           </div>
     </React.Fragment>
   );
